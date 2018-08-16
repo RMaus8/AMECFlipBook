@@ -1,2 +1,0 @@
-# AMECFlipBook
-AMEC Flip Book

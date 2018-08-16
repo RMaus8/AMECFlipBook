@@ -42,6 +42,19 @@
 				autoCenter: false
 			});
 		});	
+
+		function checkScreen(screenSize) {
+			if (screenSize.matches) {
+				$("#flipbook").turn({
+					display: 'solo'
+				})
+			}
+		}
+
+		const screenSize = window.matchMedia("(orientation: portrait)");
+		checkScreen(screenSize);
+		screenSize.addListener(screenSize);
+
 		$(window).bind('keydown', function(e){
             if (e.keyCode==37)
                 $('#flipbook').turn('previous');

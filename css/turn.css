@@ -23,3 +23,10 @@ div img {
 #flipbook div {
 	background-size: 100% 100%;
 }
+
+@media all and (orientation: portrait) {
+	#flipbook {
+		width: 90%;
+		height: 99%;
+	}
+}

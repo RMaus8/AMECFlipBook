@@ -36,25 +36,28 @@
 	</div>
 
 	<script type="text/javascript">
+		const screenSize = window.matchMedia("(orientation: portrait)");
+
 		$(window).ready(function() {
-			$("#flipbook").turn({
-				display: 'double',
-				autoCenter: false
-			});
+			checkScreen(screenSize);
+			screenSize.addListener(checkScreen);
 		});	
 
 		function checkScreen(screenSize) {
 			if (screenSize.matches) {
 				$("#flipbook").turn({
 					display: 'single'
+				})
+			} else {
+				$("#flipbook").turn({
+					display: 'double',
+					autoCenter: false
 				});
-				alert("It's working");
 			}
 		}
 
-		const screenSize = window.matchMedia("(orientation: portrait)");
-		checkScreen(screenSize);
-		screenSize.addListener(screenSize);
+		
+		
 
 		$(window).bind('keydown', function(e){
             if (e.keyCode==37)

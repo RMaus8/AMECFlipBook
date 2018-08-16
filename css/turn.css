@@ -26,7 +26,7 @@ div img {
 
 @media all and (orientation: portrait) {
 	#flipbook {
-		width: 90%;
+		width: 95%;
 		height: 99%;
 	}
 }

@@ -75,6 +75,8 @@
 			window.location.reload(); 
 		};
 
+		window.onresize = function(){ location.reload(); }
+
 		$(window).bind('keydown', function(e){
             if (e.keyCode==37)
                 $('#flipbook').turn('previous');

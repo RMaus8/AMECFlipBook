@@ -9,6 +9,49 @@
 	<script type="text/javascript" src="turn.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/turn.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+	<script type="text/javascript">
+		
+		const screenSize = window.matchMedia("(orientation: portrait)");
+
+		$(window).ready(function() {
+			checkScreen(screenSize);
+			screenSize.addListener(checkScreen);
+		});	
+
+		function checkScreen(screenSize) {
+			if (screenSize.matches) {
+				$("#flipbook").turn({
+					display: 'single'
+				});
+			} else {
+				$("#flipbook").turn({ 
+					display: 'double',
+					autoCenter: false
+				});
+			}
+		}
+
+		$("#flipbook").bind("turning", function(event, page, view) {
+			if (page == 2) {
+				$("#flipbook").css("margin", "0 auto")
+			} else if (page == 1) {
+				$("#flipbook").css("margin-left", "-7.5vw")
+			}
+		})
+
+		window.onorientationchange = function() { 
+			window.location.reload(); 
+		};
+
+		$(window).bind('keydown', function(e){
+            if (e.keyCode==37)
+                $('#flipbook').turn('previous');
+            else if (e.keyCode==39)
+                $('#flipbook').turn('next');
+        });	
+	   
+	</script>
+
 </head>
 <body>
 	<div id="flipcenter">
@@ -40,47 +83,5 @@
 	</div>
 	
 
-	<script type="text/javascript">
-		jQuery(document).ready(function() {
-			const screenSize = window.matchMedia("(orientation: portrait)");
-
-			$(window).ready(function() {
-				checkScreen(screenSize);
-				screenSize.addListener(checkScreen);
-			});	
-
-			function checkScreen(screenSize) {
-				if (screenSize.matches) {
-					$("#flipbook").turn({
-						display: 'single'
-					});
-				} else {
-					$("#flipbook").turn({ 
-						display: 'double',
-						autoCenter: false
-					});
-				}
-			}
-
-			$("#flipbook").bind("turning", function(event, page, view) {
-				if (page == 2) {
-					$("#flipbook").css("margin", "0 auto")
-				} else if (page == 1) {
-					$("#flipbook").css("margin-left", "-7.5vw")
-				}
-			})
-
-			window.onorientationchange = function() { 
-				window.location.reload(); 
-			};
-
-			$(window).bind('keydown', function(e){
-	            if (e.keyCode==37)
-	                $('#flipbook').turn('previous');
-	            else if (e.keyCode==39)
-	                $('#flipbook').turn('next');
-	        });	
-	    })
-	</script>
-</body>
+	</body>
 </html>

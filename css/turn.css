@@ -1,8 +1,9 @@
 body {
-	background-color: #f4f442;
+	/*background-color: #f4f442;*/
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	background-image: linear-gradient(lightblue, #191970)
 }
 
 div img {
@@ -23,12 +24,12 @@ p {
 #flipbook {	
 	height: 92%;
 	width: 77%;
-	background-color: #f4f442;
+	background-color: transparent;
 	position: absolute;
 	top: 0;
 	left: 0;
 	display: flex;
-	margin-left: -730px;
+	margin-left: -38vw;
 }
 
 @media all and (orientation: portrait) {

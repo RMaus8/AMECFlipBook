@@ -8,62 +8,77 @@
 	  crossorigin="anonymous"></script>
 	<script type="text/javascript" src="turn.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/turn.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 </head>
 <body>
-	<div id="flipbook">
-		<div><img src="images/web pics/AMEC Cover.PNG"></div>
-		<div><img src="images/web pics/page 1.PNG"></div>
-		<div><img src="images/web pics/page 2.PNG"></div>
-		<div><img src="images/web pics/page 3.PNG"></div>
-		<div><img src="images/web pics/page 4.PNG"></div>
-		<div><img src="images/web pics/page 5.PNG"></div>
-		<div><img src="images/web pics/Page 6.PNG"></div>
-		<div><img src="images/web pics/Page 7.PNG"></div>
-		<div><img src="images/web pics/Page 8.PNG"></div>
-		<div><img src="images/web pics/Page 9.PNG"></div>
-		<div><img src="images/web pics/Page 10.PNG"></div>
-		<div><img src="images/web pics/Page 11.PNG"></div>
-		<div><img src="images/web pics/Page 12.PNG"></div>
-		<div><img src="images/web pics/Page 13.PNG"></div>
-		<div><img src="images/web pics/Page 14.PNG"></div>
-		<div><img src="images/web pics/Page 15.PNG"></div>
-		<div><img src="images/web pics/Page 16.PNG"></div>
-		<div><img src="images/web pics/Page 17.PNG"></div>
-		<div><img src="images/web pics/Page 18.PNG"></div>
-		<div><img src="images/web pics/Page 19.PNG"></div>
-		<div><img src="images/web pics/Page 21.PNG"></div>
-		<div><img src="images/web pics/Page 20.PNG"></div>
+	<div id="flipcenter">
+		<p>Use your mouse to click or drag the corners of the magazine to turn the page. You may also use keys on a keyboard as well.</p>
+		<div id="flipbook">
+			<div id="firstPage"><img src="images/web pics/AMEC Cover.PNG"></div>
+			<div><img src="images/web pics/page 1.PNG"></div>
+			<div><img src="images/web pics/page 2.PNG"></div>
+			<div><img src="images/web pics/page 3.PNG"></div>
+			<div><img src="images/web pics/page 4.PNG"></div>
+			<div><img src="images/web pics/page 5.PNG"></div>
+			<div><img src="images/web pics/Page 6.PNG"></div>
+			<div><img src="images/web pics/Page 7.PNG"></div>
+			<div><img src="images/web pics/Page 8.PNG"></div>
+			<div><img src="images/web pics/Page 9.PNG"></div>
+			<div><img src="images/web pics/Page 10.PNG"></div>
+			<div><img src="images/web pics/Page 11.PNG"></div>
+			<div><img src="images/web pics/Page 12.PNG"></div>
+			<div><img src="images/web pics/Page 13.PNG"></div>
+			<div><img src="images/web pics/Page 14.PNG"></div>
+			<div><img src="images/web pics/Page 15.PNG"></div>
+			<div><img src="images/web pics/Page 16.PNG"></div>
+			<div><img src="images/web pics/Page 17.PNG"></div>
+			<div><img src="images/web pics/Page 18.PNG"></div>
+			<div><img src="images/web pics/Page 19.PNG"></div>
+			<div><img src="images/web pics/Page 21.PNG"></div>
+			<div><img src="images/web pics/Page 20.PNG"></div>
+		</div>
 	</div>
+	
 
 	<script type="text/javascript">
-		const screenSize = window.matchMedia("(orientation: portrait)");
+		jQuery(document).ready(function() {
+			const screenSize = window.matchMedia("(orientation: portrait)");
 
-		$(window).ready(function() {
-			checkScreen(screenSize);
-			screenSize.addListener(checkScreen);
-		});	
+			$(window).ready(function() {
+				checkScreen(screenSize);
+				screenSize.addListener(checkScreen);
+			});	
 
-		function checkScreen(screenSize) {
-			if (screenSize.matches) {
-				$("#flipbook").turn({
-					display: 'single'
-				})
-			} else {
-				$("#flipbook").turn({ 
-					display: 'double',
-					autoCenter: false
-				});
+			function checkScreen(screenSize) {
+				if (screenSize.matches) {
+					$("#flipbook").turn({
+						display: 'single'
+					});
+				} else {
+					$("#flipbook").turn({ 
+						display: 'double',
+						autoCenter: false
+					});
+				}
 			}
-		}
 
-		window.onorientationchange = () => window.location.reload();
+			$("#flipbook").bind("turning", function(event, page, view) {
+				if (page == 2) {
+					$("#flipbook").css("margin", "0 auto")
+				}
+			})
 
-		$(window).bind('keydown', function(e){
-            if (e.keyCode==37)
-                $('#flipbook').turn('previous');
-            else if (e.keyCode==39)
-                $('#flipbook').turn('next');
-        });	
+			window.onorientationchange = function() { 
+				window.location.reload(); 
+			};
+
+			$(window).bind('keydown', function(e){
+	            if (e.keyCode==37)
+	                $('#flipbook').turn('previous');
+	            else if (e.keyCode==39)
+	                $('#flipbook').turn('next');
+	        });	
+	    })
 	</script>
 </body>
 </html>

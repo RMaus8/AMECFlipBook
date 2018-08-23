@@ -68,6 +68,10 @@
 				$("#flipbook").css("margin", "0 auto")
 			} else if (page == 1) {
 				$("#flipbook").css("margin-left", "-7.5vw")
+			} else if (page == 22) {
+				$("#flipbook").css("margin-right", "-7.5vw");
+			} else if (page == 21) {
+				$("#flipbook").css("margin", "0 auto")
 			}
 		})
 
@@ -75,7 +79,7 @@
 			window.location.reload(); 
 		};
 
-		window.onresize = function(){ location.reload(); }
+		window.onresize = function(){ location.reload();  }
 
 		$(window).bind('keydown', function(e){
             if (e.keyCode==37)

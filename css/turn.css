@@ -1,14 +1,14 @@
 
 html {
 	height: 100%;
-	background: linear-gradient(lightblue, #191970)
+	background-image: url('../images/backdrop/backdrop.JPEG');
+	background-size: 100% 100%;
 }
 
 body {
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
-	
+	overflow: hidden;	
 }
 
 div img {
@@ -16,24 +16,53 @@ div img {
 	width: 100%;
 }
 
+i {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 p {
 	font-family: 'Roboto', sans-serif;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+#arrow_container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #flipcenter {
 	display: flex;
 	flex-direction: column;
-	align-items: center;	
+	align-items: center;
+	margin-top: 70px;	
 }
 
 #flipbook {	
-	height: 92%;
+	height: 88%;
 	width: 77%;
 	background-color: transparent;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-	display: flex;
 	margin-left: -38vw;
 }
 

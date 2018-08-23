@@ -1,0 +1,79 @@
+header {
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20vw;
+    box-sizing: border-box;
+    z-index: 90;;
+    -webkit-box-shadow: 0 4px 10px #666;
+    -moz-box-shadow: 0 4px 10px #666;
+    -ms-box-shadow: 0 4px 10px #666;
+    -o-box-shadow: 0 4px 10px #666;
+    box-shadow: 0 4px 10px #666;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(33, 39, 91);
+}
+
+.align {
+    align-self: center;
+}
+
+.Logo {
+    height: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.Logo div {
+    margin: 0 10px;
+}
+
+.Logo div img {
+    height: 100%;
+    width: auto;
+}
+
+#button {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(33, 39, 91);
+}
+
+#counter {
+    display: flex;
+    flex-flow: row;
+    color: rgb(33, 39, 91);
+    padding-right: 10vw;
+}
+
+#number {
+    border: 1px solid white;
+    background-color: white;
+    width: 5vw;
+    margin: 10px 5px;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#separator {
+    align-self: center;
+    width: 2px;
+    height: 80%;
+    background-color: rgb(33, 39, 91);
+}
+

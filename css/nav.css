@@ -10,7 +10,7 @@ header {
     align-items: center;
     padding: 0 20vw;
     box-sizing: border-box;
-    z-index: 90;;
+    z-index: 90;
     -webkit-box-shadow: 0 4px 10px #666;
     -moz-box-shadow: 0 4px 10px #666;
     -ms-box-shadow: 0 4px 10px #666;
@@ -78,9 +78,23 @@ h4 {
 }
 
 @media (max-width: 499px) {
+    header {
+        padding: 2vw;
+    }
+
     #counter {
         display: none;
         height: 0;
         width: 0;
     }
+
+    .align h4,
+    #separator {
+        display: none;
+    }
+
+    .Logo {
+        height: 100%;
+    }
+
 }

@@ -79,12 +79,13 @@ p {
 	#flipbook {
 		width: 97%;
 		height: 92%;
-		margin: 0 5px 0 auto;
+		margin: -3vw 0 0 -3vw;
 	}
 
 	i {
 		display: none;
 	}
-}
+
+	}
 
 

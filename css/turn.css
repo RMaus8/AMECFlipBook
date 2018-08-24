@@ -58,6 +58,7 @@ p {
 
 #flipbook {	
 	height: 88%;
+	min-height: 500px;
 	width: 77%;
 	background-color: transparent;
 	position: fixed;
@@ -79,6 +80,7 @@ p {
 	#flipbook {
 		width: 90%;
 		height: 85%;
+		min-height: 300px;
 		margin: -3vw 0 0 -4vw;
 	}
 

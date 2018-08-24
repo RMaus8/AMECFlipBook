@@ -1,5 +1,6 @@
 a {
     text-decoration: none;
+    color: rgb(33, 39, 91);
 }
 
 header {
@@ -79,6 +80,16 @@ h4 {
     width: 2px;
     height: 80%;
     background-color: rgba(33, 39, 91);
+}
+
+#title {
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 499px) {

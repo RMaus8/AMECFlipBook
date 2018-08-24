@@ -66,13 +66,6 @@ p {
 	margin-left: -38vw;
 }
 
-@media all and (orientation: portrait) {
-	#flipbook {
-		width: 97%;
-		height: 99%;
-	}
-}
-
 #flipbook .shadow,
 #flipbook.shadow{
   -webkit-box-shadow: 0 4px 10px #666;
@@ -81,3 +74,17 @@ p {
   -o-box-shadow: 0 4px 10px #666;
   box-shadow: 0 4px 10px #666;
 }
+
+@media all and (orientation: portrait) {
+	#flipbook {
+		width: 97%;
+		height: 92%;
+		margin: 0 5px 0 auto;
+	}
+
+	i {
+		display: none;
+	}
+}
+
+

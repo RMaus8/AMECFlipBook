@@ -74,6 +74,13 @@ h4 {
     align-self: center;
     width: 2px;
     height: 80%;
-    background-color: rgb(33, 39, 91);
+    background-color: rgba(33, 39, 91);
 }
 
+@media (max-width: 499px) {
+    #counter {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+}

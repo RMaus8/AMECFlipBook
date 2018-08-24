@@ -79,7 +79,7 @@ h4 {
 
 @media (max-width: 499px) {
     header {
-        padding: 2vw;
+        padding: 0 3vw;
     }
 
     #counter {
@@ -95,6 +95,7 @@ h4 {
 
     .Logo {
         height: 100%;
+        max-width: 25vw;
     }
 
 }

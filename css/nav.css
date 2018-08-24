@@ -98,4 +98,9 @@ h4 {
         max-width: 25vw;
     }
 
+    .Logo div img {
+        height: 100%;
+        max-width: 25vw;
+    }
+
 }

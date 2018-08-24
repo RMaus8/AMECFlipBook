@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 header {
     height: 56px;
     width: 100%;
@@ -50,6 +54,7 @@ h4 {
     border: 1px solid white;
     border-radius: 5px;
     padding: 5px;
+    margin-right: 5vw;
     background-color: rgb(33, 39, 91);
 }
 
@@ -57,7 +62,7 @@ h4 {
     display: flex;
     flex-flow: row;
     color: rgb(33, 39, 91);
-    padding-right: 10vw;
+    padding-right: 5vw;
 }
 
 #number {

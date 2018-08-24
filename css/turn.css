@@ -17,7 +17,7 @@ div img {
 }
 
 i {
-    border: solid black;
+    border: solid rgba(0,0,0,.7);
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 3px;
@@ -77,8 +77,8 @@ p {
 
 @media all and (orientation: portrait) {
 	#flipbook {
-		width: 95%;
-		height: 87%;
+		width: 90%;
+		height: 85%;
 		margin: -3vw 0 0 -4vw;
 	}
 

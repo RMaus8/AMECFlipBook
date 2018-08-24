@@ -5,19 +5,25 @@ $(document).ready(function(){
 	$(window).ready(function() {
 		checkScreen(screenSize);
 		screenSize.addListener(checkScreen);
+		peel();
 	});	
 
 	function checkScreen(screenSize) {
 		if (screenSize.matches) {
 			$("#flipbook").turn({
-				display: 'single'
+				display: 'single',
 			});
 		} else {
 			$("#flipbook").turn({ 
 				display: 'double',
-				autoCenter: false
+				autoCenter: false,
+				turnCorners: 'tl,tr'
 			});
 		}
+	}
+
+	function peel() {
+		$('#flipbook').turn('peel','tr');
 	}
 
 	$("#flipbook").bind("turning", function(event, page, view) {
@@ -47,7 +53,7 @@ $(document).ready(function(){
 
 	$(window).bind('keydown', function(e){
 	    if (e.keyCode==37)
-	        $('#flipbook').turn('previous');
+	        $('#flipbook').turn('previous');	        	    	
 	    else if (e.keyCode==39)
 	        $('#flipbook').turn('next');
 	});

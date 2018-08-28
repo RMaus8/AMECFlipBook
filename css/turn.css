@@ -95,33 +95,6 @@ p {
 		display: none;
 	}
 
-	i {
-		z-index: 999;
-		width: 3px;
-		height: 3px;
-	}
-
-	.phone_left {
-		position: absolute;
-		left: 30vw;
-		top: 22px;
-		display: inline;
-		border-color: white;
-	    transform: rotate(135deg);
-	    -webkit-transform: rotate(135deg);
-	    opacity: .9;
-	}
-
-	.phone_right {
-		position: absolute;
-		left: 65vw;
-		top: 22px;
-		display: inline;
-		border-color: white;
-	    transform: rotate(-45deg);
-	    -webkit-transform: rotate(-45deg);
-	    opacity: .9;
-	}
 
 }
 

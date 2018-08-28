@@ -105,6 +105,8 @@ h4 {
 @media (max-width: 499px) {
     header {
         padding: 0 3vw;
+        flex-flow: column;
+        align-items: center;
     }
 
     #button {
@@ -114,7 +116,7 @@ h4 {
     }
 
     #counter {
-        padding-right: 15vw;
+        /*padding-right: 15vw;*/
     }
 
     .align a,
@@ -123,18 +125,35 @@ h4 {
     }
 
     .Logo {
+        display: none;
         height: 90%;
         max-width: 20vw;
     }
 
-    .Logo div img {
-        height: 100%;
-        max-width: 100px;
+    i {
+        z-index: 999;
+        width: 5px;
+        height: 5px;
     }
 
-    .Logo div {
-        margin: 0;
+    .phone_left {
+        padding-top: 5px;
+        display: inline;
+        border-color: white;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        opacity: .9;
     }
+
+    .phone_right {
+        padding-top: 5px;
+        display: inline;
+        border-color: white;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        opacity: .9;
+    }
+
 
 }
 

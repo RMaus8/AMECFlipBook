@@ -117,6 +117,7 @@ h4 {
 
     #counter {
         /*padding-right: 15vw;*/
+        height: 100%;
     }
 
     .align a,
@@ -133,11 +134,11 @@ h4 {
     i {
         z-index: 999;
         width: 5px;
-        height: 5px;
+        height: 5px; 
     }
 
     .phone_left {
-        padding-top: 5px;
+        /*padding-top: 5px;*/
         display: inline;
         border-color: white;
         transform: rotate(135deg);
@@ -146,7 +147,7 @@ h4 {
     }
 
     .phone_right {
-        padding-top: 5px;
+        /*padding-top: 5px;*/
         display: inline;
         border-color: white;
         transform: rotate(-45deg);

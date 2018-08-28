@@ -67,7 +67,11 @@ $(document).ready(function(){
 		window.location.reload(); 
 	};
 
-	window.onresize = function(){ location.reload();  }
+	window.onresize = function(){ 
+		if(window.width() > 900) {
+			location.reload();
+		}  
+	}
 
 	$(window).bind('keydown', function(e){
 	    if (e.keyCode==37)

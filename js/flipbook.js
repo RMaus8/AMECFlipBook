@@ -28,7 +28,13 @@ $(document).ready(function(){
 
 	$("#flipbook").bind("turning", function(event, page, view) {
 		count = page
-		$('#number').html(count);
+		if(count >= 2) {
+			if((count - 2) === 0) {
+				$('#number').html(1);
+			} else {
+				$('#number').html(count - 2);
+			}			
+		} 		
 		if($(window).width() > 500) {		
 			if (page == 2) {
 				$("#flipbook").css("margin", "0 auto")
@@ -87,4 +93,10 @@ $(document).ready(function(){
 		$('#flipbook').turn('previous');
 	});
 
+	$(".phone_right").click(function(){
+		$('#flipbook').turn('next');
+	});
+	$(".phone_left").click(function(){
+		$('#flipbook').turn('previous');
+	});
 });

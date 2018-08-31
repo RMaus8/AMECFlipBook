@@ -111,6 +111,10 @@ p {
 		background-size: 100% 100%;	
 	}
 
+	#arrow_container {				
+		margin-left: -50vw;
+	}
+
 	#flipcenter {
 		margin: 0;
 		justify-content: center;
@@ -121,18 +125,15 @@ p {
 		height: 92%;
 		min-height: 0;
 		width: 92%;
+		margin: 0;
 		background-color: transparent;
-		/*position: fixed;
-		top: 0;
-		left: 0;*/
-		/*margin-left: -38vw;*/
 	}
 
 	i {
 	    border: solid rgba(0,0,0,.7);
 	    border-width: 0 5px 5px 0;
 	    padding: 3px;
-	    margin: 0 5px;
+	    margin: 0 0;
 	    width: 0px;
 	    height: 0px;
 	    border-radius: 5px;

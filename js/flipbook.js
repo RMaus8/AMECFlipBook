@@ -61,6 +61,32 @@ $(document).ready(function(){
 					"border-width" : "0 5px 5px 0"
 				});
 			}
+		} else if($(window).width() > 450 && $(window).width()  <= 850) {		
+			if (page == 2) {
+				$("#arrow_container").css("margin-left", "0")
+				$(".left").css({
+					"border" : "solid rgba(0,0,0,.7)",
+					"border-width" : "0 5px 5px 0"
+				});
+			} else if (page == 1) {
+				$("#arrow_container").css("margin-left", "-50vw")
+				$(".left").css({
+					"border" : "solid rgba(0,0,0,0)",
+					"border-width" : "0 5px 5px 0"
+				});
+			} else if (page == 22) {
+				$("#arrow_container").css("margin-right", "-50vw");
+				$(".right").css({
+					"border" : "solid rgba(0,0,0,0)",
+					"border-width" : "0 5px 5px 0"
+				});
+			} else if (page == 21) {
+				$("#arrow_container").css("margin-right", "0")
+				$(".right").css({
+					"border" : "solid rgba(0,0,0,.7)",
+					"border-width" : "0 5px 5px 0"
+				});
+			}
 		}
 	})
 

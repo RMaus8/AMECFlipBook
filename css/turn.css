@@ -124,12 +124,12 @@ p {
 
 	.left {
 		position: fixed;
-		left: 0;
+		left: 2;
 	}
 
 	.right {
 		position: fixed;
-		right: 0;
+		right: 2;
 	}
 
 	#arrow_container {				

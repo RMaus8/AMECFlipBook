@@ -63,7 +63,7 @@ $(document).ready(function(){
 			}
 		} else if($(window).width() > 450 && $(window).width()  <= 850) {		
 			if (page == 2) {
-				$("#arrow_container").css("margin-left", "0")
+				$("#arrow_container").css("margin-left", "-2vw")
 				$(".left").css({
 					"border" : "solid rgba(0,0,0,.7)",
 					"border-width" : "0 5px 5px 0"
@@ -81,7 +81,7 @@ $(document).ready(function(){
 					"border-width" : "0 5px 5px 0"
 				});
 			} else if (page == 21) {
-				$("#arrow_container").css("margin-right", "0")
+				$("#arrow_container").css("margin-right", "-2vw")
 				$(".right").css({
 					"border" : "solid rgba(0,0,0,.7)",
 					"border-width" : "0 5px 5px 0"

@@ -111,21 +111,21 @@ p {
 		background-size: 100% 100%;	
 	}
 
-	#flipcenter {
+	/*#flipcenter {
 		margin: 0;
 		justify-content: center;
 		margin-top: 5px
 		height: 415px;
-	}
+	}*/
 
 	#flipbook {	
 		height: 92%;
 		min-height: 0;
 		width: 92%;
 		background-color: transparent;
-		position: fixed;
+		/*position: fixed;
 		top: 0;
-		left: 0;
+		left: 0;*/
 		margin-left: -38vw;
 	}
 

@@ -102,7 +102,6 @@ p {
 @media (orientation: landscape) and (max-width: 900px) {
 	html {
 		height: 100%;
-		background-image: url('../images/backdrop/backdrop.jpeg');
 		background-size: 100% 100%;
 	}
 
@@ -139,6 +138,5 @@ p {
 	    height: 0px;
 	    border-radius: 5px;
 	    cursor: pointer;
-	    z-index: 999;
 	}
 }

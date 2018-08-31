@@ -13,12 +13,6 @@ $(document).ready(function(){
 			$("#flipbook").turn({
 				display: 'single',
 			});
-		} else if ($(window).width() < 900 && $(window).width()>500) {
-			$("#flipbook").turn({ 
-				display: 'double',
-				autoCenter: true,
-				turnCorners: 'tl,tr'
-			});
 		} else {
 			$("#flipbook").turn({ 
 				display: 'double',

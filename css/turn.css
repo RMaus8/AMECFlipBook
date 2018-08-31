@@ -116,8 +116,8 @@ p {
 	    border-width: 0 5px 5px 0;
 	    padding: 3px;
 	    margin: 0 0;
-	    width: 0px;
-	    height: 0px;
+	    width: 2px;
+	    height: 2px;
 	    border-radius: 5px;
 	    cursor: pointer;
 	}

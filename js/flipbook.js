@@ -13,6 +13,12 @@ $(document).ready(function(){
 			$("#flipbook").turn({
 				display: 'single',
 			});
+		} else if ($(window).width() < 900 && $(window).width()>500) {
+			$("#flipbook").turn({ 
+				display: 'double',
+				autoCenter: true,
+				turnCorners: 'tl,tr'
+			});
 		} else {
 			$("#flipbook").turn({ 
 				display: 'double',
@@ -35,7 +41,7 @@ $(document).ready(function(){
 				$('#number').html(count - 2);
 			}			
 		} 		
-		if($(window).width() > 900) {		
+		if($(window).width() > 500) {		
 			if (page == 2) {
 				$("#flipbook").css("margin", "0 auto")
 				$(".left").css({

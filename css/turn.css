@@ -125,13 +125,13 @@ p {
 	.left {
 		position: fixed;
 		left: 0;
-		margin: 2px;
+		margin-left: 5px;
 	}
 
 	.right {
 		position: fixed;
 		right: 0;
-		margin: 2px;
+		margin-right: 5px;
 	}
 
 	#arrow_container {				

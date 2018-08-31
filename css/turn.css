@@ -111,6 +111,27 @@ p {
 		background-size: 100% 100%;	
 	}
 
+	i {
+	    border: solid rgba(0,0,0,.7);
+	    border-width: 0 5px 5px 0;
+	    padding: 3px;
+	    margin: 0 0;
+	    width: 0px;
+	    height: 0px;
+	    border-radius: 5px;
+	    cursor: pointer;
+	}
+
+	.left {
+		position: fixed;
+		left: 0;
+	}
+
+	.right {
+		position: fixed;
+		right: 0;
+	}
+
 	#arrow_container {				
 		margin-left: -50vw;
 	}
@@ -129,14 +150,5 @@ p {
 		background-color: transparent;
 	}
 
-	i {
-	    border: solid rgba(0,0,0,.7);
-	    border-width: 0 5px 5px 0;
-	    padding: 3px;
-	    margin: 0 0;
-	    width: 0px;
-	    height: 0px;
-	    border-radius: 5px;
-	    cursor: pointer;
-	}
+	
 }

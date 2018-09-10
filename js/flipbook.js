@@ -28,13 +28,14 @@ $(document).ready(function(){
 
 	$("#flipbook").bind("turning", function(event, page, view) {
 		count = page
-		if(count >= 2) {
-			if((count - 2) === 0) {
-				$('#number').html(1);
-			} else {
-				$('#number').html(count - 2);
-			}			
-		} 		
+		$('#number').html(count);
+		// if(count >= 2) {
+		// 	if((count - 2) === 0) {
+		// 		$('#number').html(1);
+		// 	} else {
+		// 		$('#number').html(count - 2);
+		// 	}			
+		// } 		
 		if($(window).width() > 850) {		
 			if (page == 2) {
 				$("#flipbook").css("margin", "0 auto")

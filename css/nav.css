@@ -103,7 +103,7 @@ h4 {
     font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 499px) {
+@media (orientation: portrait), (max-width: 499px) {
     header {
         padding: 0 3vw;
         flex-flow: column;

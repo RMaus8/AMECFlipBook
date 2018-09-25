@@ -12,6 +12,7 @@ $(document).ready(function(){
 		if (screenSize.matches) {
 			$("#flipbook").turn({
 				display: 'single',
+				autoCenter: false
 			});
 		} else {
 			$("#flipbook").turn({ 
@@ -96,9 +97,9 @@ $(document).ready(function(){
 	};
 
 	window.onresize = function(){ 
-		if(window.width() > 900) {
+		// if(window.width() > 900) {
 			location.reload();
-		}  
+		// }  
 	}
 
 	$(window).bind('keydown', function(e){

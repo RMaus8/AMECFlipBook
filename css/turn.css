@@ -66,9 +66,9 @@ p {
 }
 
 #flipbook {	
-	height: 40vw;
+	height: 42vw;
 	min-height: 500px;
-	width: 62vw;
+	width: 65vw;
 	background-color: transparent;
 	position: fixed;
 	top: 0;
@@ -147,10 +147,10 @@ p {
 	}
 
 	#flipbook {	
-		height: 80vh;
+		height: 300px;
 		min-height: ;
-		width: 123vh;
-		margin: 0;
+		width: 463px;
+		margin: auto;
 		background-color: transparent;
 	}
 

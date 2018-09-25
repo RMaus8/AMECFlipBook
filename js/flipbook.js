@@ -97,7 +97,7 @@ $(document).ready(function(){
 	};
 
 	window.onresize = function(){ 
-		if(window.width() > 900) {
+		if(window.width() > 860) {
 			location.reload();
 		}  
 	}

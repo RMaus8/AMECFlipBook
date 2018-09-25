@@ -3,11 +3,13 @@ html {
 	height: 100%;
 	background-image: url('../images/backdrop/backdropSM.jpg');
 	background-size: 100% 100%;
+	overflow: hidden;
 }
 
 body {
 	width: 100%;
 	height: 100%;	
+	overflow: hidden;
 }
 
 div img {
@@ -145,9 +147,9 @@ p {
 	}
 
 	#flipbook {	
-		height: 92%;
-		min-height: 0;
-		width: 92%;
+		height: 92vh;
+		min-height: ;
+		width: 148.18vh;
 		margin: 0;
 		background-color: transparent;
 	}

@@ -162,6 +162,7 @@ h4 {
 @media (orientation: landscape) and (max-width: 900px) {
     header {
         display: none;
+        
     }
 }
 

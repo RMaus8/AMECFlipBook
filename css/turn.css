@@ -66,7 +66,7 @@ p {
 #flipbook {	
 	height: 45vw;
 	min-height: 500px;
-	width: 75vw;
+	width: 70vw;
 	background-color: transparent;
 	position: fixed;
 	top: 0;
@@ -85,7 +85,7 @@ p {
 
 @media all and (orientation: portrait) and (max-width: 500px){
 	#flipbook {
-		width: 90%;
+		width: 65.68%;
 		height: 85%;
 		min-height: 300px;
 		margin: -3vw 0 0 -4vw;

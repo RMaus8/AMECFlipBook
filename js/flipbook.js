@@ -91,11 +91,6 @@ $(document).ready(function(){
 		}
 	})
 
-	$('#flipbook').change(function(){
-		alert("changed")
-		$('#number').html(count);
-	})
-
 	window.onorientationchange = function() { 
 		window.location.reload(); 
 	};

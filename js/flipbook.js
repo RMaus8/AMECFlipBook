@@ -37,7 +37,7 @@ $(document).ready(function(){
 		// 		$('#number').html(count - 2);
 		// 	}			
 		// } 		
-		if($(window).width() > 850) {		
+		if($(window).width() > 860) {		
 			if (page == 2) {
 				$("#flipbook").css("margin", "0 auto")
 				$(".left").css({
@@ -63,7 +63,7 @@ $(document).ready(function(){
 					"border-width" : "0 5px 5px 0"
 				});
 			}
-		} else if($(window).width() > 450 && $(window).width()  <= 850) {		
+		} else if($(window).width() > 450 && $(window).width()  <= 860) {		
 			if (page == 2) {
 				$("#arrow_container").css("margin-left", "-2vw")
 				$(".left").css({
@@ -98,7 +98,7 @@ $(document).ready(function(){
 
 	window.onresize = function(){ 
 		if(window.width() > 860) {
-			location.reload();
+			window.location.reload();
 		}  
 	}
 

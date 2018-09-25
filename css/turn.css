@@ -105,21 +105,19 @@ p {
 	html {
 		height: 100%;
 		background-size: 100% 100%;
-		overflow: auto;
 	}
 
 	body {
 		width: 100%;
 		height: 100%;
-		background-size: 100% 100%;
-		overflow: auto;	
+		background-size: 100% 100%;	
 	}
 
 	i {
 	    border: solid rgba(0,0,0,.7);
 	    border-width: 0 5px 5px 0;
 	    padding: 3px;
-	    margin: 0 0;
+	    margin: 0;
 	    width: 2px;
 	    height: 2px;
 	    border-radius: 5px;
@@ -129,13 +127,13 @@ p {
 	.left {
 		position: fixed;
 		left: 0;
-		margin-left: 5px;
+		margin-left: 10px;
 	}
 
 	.right {
 		position: fixed;
 		right: 0;
-		margin-right: 5px;
+		margin-right: 10px;
 	}
 
 	#arrow_container {				
@@ -149,8 +147,9 @@ p {
 	}
 
 	#flipbook {	
-		height: 300px;
-		width: 463px;
+		height: 90vh;
+		min-height: 0;
+		width: 139vh;
 		margin: 0;
 		background-color: transparent;
 	}

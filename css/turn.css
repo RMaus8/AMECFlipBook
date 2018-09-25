@@ -85,8 +85,8 @@ p {
 
 @media all and (orientation: portrait) and (max-width: 500px){
 	#flipbook {
-		width: 65.68%;
-		height: 85%;
+		width: 90vw;
+		height: 116.5vw;
 		min-height: 300px;
 		margin: -3vw 0 0 -4vw;
 	}

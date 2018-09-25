@@ -148,9 +148,8 @@ p {
 
 	#flipbook {	
 		height: 300px;
-		min-height: ;
 		width: 463px;
-		margin: auto;
+		margin: 0;
 		background-color: transparent;
 	}
 
